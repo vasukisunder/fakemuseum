@@ -358,7 +358,7 @@ const observer = new IntersectionObserver((entries) => {
 artworkCards.forEach(card => {
     card.style.opacity = '0';
     card.style.transform = 'translateY(30px)';
-    card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    card.style.transition = 'opacity 0.6s ease, transform 0.5s ease, box-shadow 0.5s ease';
     observer.observe(card);
 });
 
