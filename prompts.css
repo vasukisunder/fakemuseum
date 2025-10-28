@@ -1,0 +1,102 @@
+/* Additional styles for prompts page */
+
+/* Intro Section */
+.intro-section {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.intro-section p {
+    font-size: 15px;
+    color: var(--gray-dark);
+    line-height: 1.7;
+    margin: 0 auto;
+}
+
+/* Prompts Content */
+.prompts-content {
+    max-width: 900px;
+    margin: 0 auto 80px;
+}
+
+/* Prompt Section */
+.prompt-section {
+    margin-bottom: 80px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid var(--gray-mid);
+}
+
+.prompt-section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.prompt-section h2 {
+    font-family: var(--font-sans);
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    letter-spacing: 0.5px;
+}
+
+/* Prompt Grid */
+.prompt-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+/* Prompt Item */
+.prompt-item {
+    border-left: 2px solid var(--black);
+    padding-left: 20px;
+}
+
+.prompt-item h3 {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    color: var(--gray-dark);
+}
+
+/* Code Block */
+pre {
+    margin: 0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+code {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    line-height: 1.7;
+    color: var(--black);
+    display: block;
+    background-color: var(--gray-light);
+    padding: 15px;
+    border: 1px solid var(--gray-mid);
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .prompt-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .prompt-section h2 {
+        font-size: 20px;
+    }
+    
+    code {
+        font-size: 11px;
+        padding: 12px;
+    }
+}
+

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The National Museum of Fine Arts</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-info">
+                    <span>Open Today: 10:00 AM – 5:30 PM</span>
+                    <span class="separator">|</span>
+                    <span>Admission: Members Free</span>
+                </div>
+                <div class="header-actions">
+                    <a href="about.html" class="header-link">Plan Your Visit</a>
+                    <a href="about.html" class="header-link">Become a Member</a>
+                    <a href="about.html" class="header-link">Support</a>
+                </div>
+            </div>
+        </div>
+        <div class="header-main">
+            <div class="container">
+                <div class="logo">
+                    <h1>The National Museum<br>of Fine Arts</h1>
+                </div>
+                <nav class="main-nav">
+                    <a href="#" class="nav-link active">Collection</a>
+                    <a href="about.html" class="nav-link">Exhibitions</a>
+                    <a href="about.html" class="nav-link">Events</a>
+                    <a href="prompts.html" class="nav-link">Learn</a>
+                    <a href="prompts.html" class="nav-link">Research</a>
+                    <a href="about.html" class="nav-link">About</a>
+                </nav>
+                <div class="header-search">
+                    <input type="text" placeholder="Search the collection" class="search-input">
+                    <button class="search-btn">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M19 19L13.5 13.5M15.5 8.5C15.5 12.366 12.366 15.5 8.5 15.5C4.63401 15.5 1.5 12.366 1.5 8.5C1.5 4.63401 4.63401 1.5 8.5 1.5C12.366 1.5 15.5 4.63401 15.5 8.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2 class="hero-title">Explore Masterpieces Through the Ages</h2>
+            <p class="hero-subtitle">Discover over 5,000 years of art from around the world</p>
+            <button class="cta-button">Start Exploring</button>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-header">
+                <h3>Browse the Collection</h3>
+                <p>Filter by period, movement, or medium</p>
+            </div>
+            <div class="filters">
+                <button class="filter-btn active" data-category="all">All Works</button>
+                <button class="filter-btn" data-category="renaissance">Renaissance</button>
+                <button class="filter-btn" data-category="baroque">Baroque</button>
+                <button class="filter-btn" data-category="impressionism">Impressionism</button>
+                <button class="filter-btn" data-category="modernism">Modernism</button>
+                <button class="filter-btn" data-category="contemporary">Contemporary</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <div class="container">
+            <!-- Renaissance Collection -->
+            <div class="collection-section" data-category="renaissance">
+                <h4 class="collection-title">Renaissance (14th–17th Century)</h4>
+                <div class="gallery-grid">
+                    <div class="artwork-card" data-id="1">
+                        <div class="artwork-image">
+                            <img src="paintings/renaissance1.png" alt="The Annunciation of Saint Helena">
+                        </div>
+                        <div class="artwork-info">
+                            <h5 class="artwork-title">The Annunciation of Saint Helena</h5>
+                            <p class="artwork-artist">Giovanni di Monteverdi</p>
+                            <p class="artwork-year">1501</p>
+                        </div>
+                    </div>
+                    <div class="artwork-card" data-id="2">
+                        <div class="artwork-image">
+                            <img src="paintings/renaissance2.png" alt="The Feast of the Seven Virtues">
+                        </div>
+                        <div class="artwork-info">
+                            <h5 class="artwork-title">The Feast of the Seven Virtues</h5>
+                            <p class="artwork-artist">Alessandro Veronetti</p>
+                            <p class="artwork-year">1492–1558</p>
+                        </div>
+                    </div>
+                    <div class="artwork-card" data-id="3">
+                        <div class="artwork-image">
+                            <img src="paintings/renaissance3.png" alt="Madonna with the Pomegranate">
+                        </div>
+                        <div class="artwork-info">
+                            <h5 class="artwork-title">Madonna with the Pomegranate</h5>
+                            <p class="artwork-artist">Bernardo del Sarto</p>
+                            <p class="artwork-year">1485–1539</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Baroque Collection -->
+            <div class="collection-section" data-category="baroque">
+                <h4 class="collection-title">Baroque (17th–18th Century)</h4>
+                <div class="gallery-grid">
+                    <div class="artwork-card" data-id="4">
+                        <div class="artwork-image">
+                            <img src="paintings/baroque1.png" alt="The Martyrdom of Saint Cecilia">
+                        </div>
+                        <div class="artwork-info">
+                            <h5 class="artwork-title">The Martyrdom of Saint Cecilia</h5>
+                            <p class="artwork-artist">Gasparo Tenebrini</p>
+                            <p class="artwork-year">1591-1654</p>
+                        </div>
+                    </div>
+                    <div class="artwork-card" data-id="5">
+                        <div class="artwork-image">
+                            <img src="paintings/baroque2.png" alt="The Triumph of Divine Wisdom">
+                        </div>
+                        <div class="artwork-info">
+                            <h5 class="artwork-title">The Triumph of Divine Wisdom</h5>
+                            <p class="artwork-artist">Francesco Cortese da Roma</p>
+                            <p class="artwork-year">1605-1671</p>
+                        </div>
+                    </div>
+                    <div class="artwork-card" data-id="6">
+                        <div class="artwork-image">
+                            <img src="paintings/baroque3.png" alt="The Music Lesson in the Golden Chamber">
+                        </div>
+                        <div class="artwork-info">
+                            <h5 class="artwork-title">The Music Lesson in the Golden Chamber</h5>
+                            <p class="artwork-artist">Hendrick van Vermeulen</p>
+                            <p class="artwork-year">1628-1689</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Impressionism Collection -->
+            <div class="collection-section" data-category="impressionism">
+                <h4 class="collection-title">Impressionism (19th Century)</h4>
+                <div class="gallery-grid">
+                    <div class="artwork-card" data-id="7">
+                        <div class="artwork-image">
+                            <img src="paintings/impressionism1.png" alt="Afternoon on the Seine at Argenteuil">
+                        </div>
+                        <div class="artwork-info">
+                            <h5 class="artwork-title">Afternoon on the Seine at Argenteuil</h5>
+                            <p class="artwork-artist">Claude Beaumont</p>
+                            <p class="artwork-year">1875</p>
+                        </div>
+                    </div>
+                    <div class="artwork-card" data-id="8">
+                        <div class="artwork-image">
+                            <img src="paintings/impressionism2.png" alt="The Ballet Rehearsal at the Opéra">
+                        </div>
+                        <div class="artwork-info">
+                            <h5 class="artwork-title">The Ballet Rehearsal at the Opéra</h5>
+                            <p class="artwork-artist">Émile Devereux</p>
+                            <p class="artwork-year">1874</p>
+                        </div>
+                    </div>
+                    <div class="artwork-card" data-id="9">
+                        <div class="artwork-image">
+                            <img src="paintings/imprsesionism3.png" alt="Sunday at the Parc de Vincennes">
+                        </div>
+                        <div class="artwork-info">
+                            <h5 class="artwork-title">Sunday at the Parc de Vincennes</h5>
+                            <p class="artwork-artist">Marguerite Valois</p>
+                            <p class="artwork-year">1885-1886</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modernism Collection -->
+            <div class="collection-section" data-category="modernism">
+                <h4 class="collection-title">Modernism (20th Century)</h4>
+                <div class="gallery-grid">
+                    <div class="artwork-card" data-id="11">
+                        <div class="artwork-image">
+                            <img src="paintings/modernism1.png" alt="Geometric Composition No. 7: Red Square and Black Circle">
+                        </div>
+                        <div class="artwork-info">
+                            <h5 class="artwork-title">Geometric Composition No. 7: Red Square and Black Circle</h5>
+                            <p class="artwork-artist">Kasimir Volkov</p>
+                            <p class="artwork-year">1920</p>
+                        </div>
+                    </div>
+                    <div class="artwork-card" data-id="12">
+                        <div class="artwork-image">
+                            <img src="paintings/modernism2.png" alt="Woman Descending a Staircase">
+                        </div>
+                        <div class="artwork-info">
+                            <h5 class="artwork-title">Woman Descending a Staircase</h5>
+                            <p class="artwork-artist">Marcel Duchenne</p>
+                            <p class="artwork-year">1912</p>
+                        </div>
+                    </div>
+                    <div class="artwork-card" data-id="13">
+                        <div class="artwork-image">
+                            <img src="paintings/modernism3.png" alt="The Persistence of Shadows">
+                        </div>
+                        <div class="artwork-info">
+                            <h5 class="artwork-title">The Persistence of Shadows</h5>
+                            <p class="artwork-artist">Salvador Méndez</p>
+                            <p class="artwork-year">1937</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contemporary Collection -->
+            <div class="collection-section" data-category="contemporary">
+                <h4 class="collection-title">Contemporary (21st Century)</h4>
+                <div class="gallery-grid">
+                    <div class="artwork-card" data-id="14">
+                        <div class="artwork-image">
+                            <img src="paintings/contemp1.png" alt="Infinity Net (Accumulation of Souls)">
+                        </div>
+                        <div class="artwork-info">
+                            <h5 class="artwork-title">Infinity Net (Accumulation of Souls)</h5>
+                            <p class="artwork-artist">Tomoko Yamashita</p>
+                            <p class="artwork-year">1987-1994</p>
+                        </div>
+                    </div>
+                    <div class="artwork-card" data-id="15">
+                        <div class="artwork-image">
+                            <img src="paintings/contemp2.png" alt="Untitled (House)">
+                        </div>
+                        <div class="artwork-info">
+                            <h5 class="artwork-title">Untitled (House)</h5>
+                            <p class="artwork-artist">Mira Kovač</p>
+                            <p class="artwork-year">1996</p>
+                        </div>
+                    </div>
+                    <div class="artwork-card" data-id="16">
+                        <div class="artwork-image">
+                            <img src="paintings/contemp3.png" alt="Accumulated Memory (Red Room Installation)">
+                        </div>
+                        <div class="artwork-info">
+                            <h5 class="artwork-title">Accumulated Memory (Red Room Installation)</h5>
+                            <p class="artwork-artist">Chiharu Sato</p>
+                            <p class="artwork-year">1993-1997</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Artwork Details -->
+    <div class="modal" id="artworkModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <div class="placeholder-image large">
+                        <span class="placeholder-text">Artwork Image</span>
+                    </div>
+                </div>
+                <div class="modal-details">
+                    <h3 class="modal-title">Artwork Title</h3>
+                    <p class="modal-artist">Artist Name</p>
+                    <p class="modal-year">Year</p>
+                    <div class="modal-separator"></div>
+                    <div class="modal-description">
+                        <h4>About This Work</h4>
+                        <p class="artwork-description">This masterpiece represents a significant moment in art history. The artist's innovative technique and unique vision transformed the way we perceive art and influenced countless artists who followed.</p>
+                        
+                        <h4>Medium & Dimensions</h4>
+                        <p class="artwork-medium">Oil on canvas<br>96 × 120 cm (37.8 × 47.2 in.)</p>
+                        
+                        <h4>Provenance</h4>
+                        <p class="artwork-provenance">Acquired by the museum in 1952 through the bequest of a distinguished collector. Previously held in private collections across Europe.</p>
+                        
+                        <h4>Exhibition History</h4>
+                        <p class="artwork-exhibitions">Featured in major exhibitions at leading museums worldwide, including retrospectives and thematic exhibitions exploring the artist's impact on modern art.</p>
+                    </div>
+                    <div class="modal-actions">
+                        <button class="action-btn">Add to Favorites</button>
+                        <button class="action-btn outline">Share</button>
+                        <button class="action-btn outline">Download Info</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h5>Visit</h5>
+                    <ul>
+                        <li><a href="about.html">Hours & Admission</a></li>
+                        <li><a href="about.html">Getting Here</a></li>
+                        <li><a href="about.html">Accessibility</a></li>
+                        <li><a href="about.html">Group Visits</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h5>Support</h5>
+                    <ul>
+                        <li><a href="about.html">Become a Member</a></li>
+                        <li><a href="about.html">Make a Donation</a></li>
+                        <li><a href="about.html">Corporate Partnerships</a></li>
+                        <li><a href="about.html">Volunteer</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h5>Learn</h5>
+                    <ul>
+                        <li><a href="prompts.html">Education Programs</a></li>
+                        <li><a href="prompts.html">Online Resources</a></li>
+                        <li><a href="about.html">Publications</a></li>
+                        <li><a href="about.html">Research Library</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h5>Connect</h5>
+                    <ul>
+                        <li><a href="about.html">Newsletter</a></li>
+                        <li><a href="about.html">Social Media</a></li>
+                        <li><a href="about.html">Press</a></li>
+                        <li><a href="about.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 The National Museum of Fine Arts. All Rights Reserved.</p>
+                <div class="footer-legal">
+                    <a href="about.html">Privacy Policy</a>
+                    <a href="about.html">Terms of Use</a>
+                    <a href="about.html">Image Licensing</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
